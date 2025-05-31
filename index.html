@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Awesome Website</title>
   <style>
-    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+    }
+    nav a {
+      margin: 0 15px;
+      color: cyan;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem;
+      border-bottom: 1px solid #444;
+    }
+    h1, h2 {
+      color: cyan;
+    }
+    .btn {
+      background: cyan;
+      color: #111;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: white;
+      color: black;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>Made with ❤️ using GitHub Pages.</p>
+  <header>
+    <h1>Welcome to My Website!</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#server">Game/Server</a>
+      <a href="#fun">Cool Stuff</a>
+    </nav>
+  </header>
+
+  <section id="portfolio">
+    <h2>🧑‍💻 My Portfolio</h2>
+    <p>Hello! I'm a Minecraft and web enthusiast. I like creating custom servers and websites.</p>
+    <p>Contact me at: <strong>your@email.com</strong></p>
 </body>
 </html>
